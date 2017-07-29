@@ -11,7 +11,7 @@
                 <Button Text="Iniciar Sesión" BackgroundColor="#6c9d20" TextColor="White" HorizontalOptions="FillAndExpand" />
             </StackLayout>
             <StackLayout VerticalOptions="End">
-                <Button Text="¿Olvidaste tu contraseña? Haz click aquí" BackgroundColor="Transparent" TextColor="Gray" FontSize="Small" HorizontalOptions="FillAndExpand"/>
+                <Button Text="¿Olvidaste tu contraseña? Haz click aquí" BackgroundColor="Transparent" TextColor="Gray" FontSize="Small" HorizontalOptions="FillAndExpand" Clicked="LoginButtonClicked" />
             </StackLayout>
         </StackLayout>
 	</ContentPage.Content>

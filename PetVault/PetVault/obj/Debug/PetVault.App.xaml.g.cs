@@ -12,7 +12,7 @@ namespace PetVault {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/mikearias/PetVault/PetVault/PetVault/App.xaml")]
-    public partial class App : global::Xamarin.Forms.Application {
+    public partial class App : global::Prism.Unity.PrismApplication {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {

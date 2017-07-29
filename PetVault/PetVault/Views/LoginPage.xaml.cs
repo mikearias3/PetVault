@@ -12,5 +12,10 @@ namespace PetVault.Views
             NavigationPage.SetHasNavigationBar(this, false);
             InitializeComponent();
         }
+
+        void LoginButtonClicked(object sender, System.EventArgs e)
+        {
+            
+        }
     }
 }

@@ -1,9 +1,23 @@
 ﻿<Properties StartupConfiguration="{6C3C894B-8EF9-444F-82C7-6876D649D8EC}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="PetVault/App.xaml.cs">
     <Files>
-      <File FileName="PetVault/Views/LoginPage.xaml" Line="10" Column="26" />
-      <File FileName="PetVault/Views/LoginPage.xaml.cs" Line="1" Column="1" />
-      <File FileName="PetVault/App.xaml.cs" Line="11" Column="34" />
+      <File FileName="PetVault/Views/LoginPage.xaml" Line="19" Column="1" />
+      <File FileName="PetVault/Views/LoginPage.xaml.cs" Line="17" Column="1" />
+      <File FileName="PetVault/App.xaml.cs" Line="21" Column="80" />
+      <File FileName="PetVault/Views/HomePage.xaml" Line="3" Column="2" />
+      <File FileName="PetVault/Views/HomePage.xaml.cs" Line="12" Column="42" />
+      <File FileName="PetVault/App.xaml" Line="10" Column="1" />
+      <File FileName="iOS/AppDelegate.cs" Line="24" Column="46" />
+      <File FileName="iOS/packages.config" Line="1" Column="1" />
+      <File FileName="Droid/MainActivity.cs" Line="26" Column="13" />
+      <File FileName="PetVault/ViewModels/HomePageViewModel.cs" Line="1" Column="1" />
+      <File FileName="PetVault/ViewModels/LoginPageViewModel.cs" Line="1" Column="1" />
+      <File FileName="PetVault/Views/Tabs/DogPage.xaml" Line="6" Column="1" />
+      <File FileName="PetVault/Views/Tabs/DogPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="PetVault/Views/Tabs/CatPage.xaml" Line="6" Column="1" />
+      <File FileName="PetVault/Views/Tabs/CatPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="PetVault/ViewModels/DogPageViewModel.cs" Line="1" Column="1" />
+      <File FileName="PetVault/ViewModels/CatPageViewModel.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

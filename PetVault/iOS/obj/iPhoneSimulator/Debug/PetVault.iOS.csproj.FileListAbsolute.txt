@@ -57,3 +57,15 @@
 /Users/mikearias/PetVault/PetVault/iOS/obj/iPhoneSimulator/Debug/PetVault.iOS.csproj.CoreCompileInputs.cache
 /Users/mikearias/PetVault/PetVault/iOS/obj/iPhoneSimulator/Debug/PetVault.iOS.exe
 /Users/mikearias/PetVault/PetVault/iOS/obj/iPhoneSimulator/Debug/PetVault.iOS.pdb
+/Users/mikearias/PetVault/PetVault/iOS/bin/iPhoneSimulator/Debug/Microsoft.Practices.ServiceLocation.dll
+/Users/mikearias/PetVault/PetVault/iOS/bin/iPhoneSimulator/Debug/Microsoft.Practices.Unity.dll
+/Users/mikearias/PetVault/PetVault/iOS/bin/iPhoneSimulator/Debug/Prism.dll
+/Users/mikearias/PetVault/PetVault/iOS/bin/iPhoneSimulator/Debug/Prism.Forms.dll
+/Users/mikearias/PetVault/PetVault/iOS/bin/iPhoneSimulator/Debug/Prism.Unity.Forms.dll
+/Users/mikearias/PetVault/PetVault/iOS/bin/iPhoneSimulator/Debug/Microsoft.Practices.ServiceLocation.pdb
+/Users/mikearias/PetVault/PetVault/iOS/bin/iPhoneSimulator/Debug/Microsoft.Practices.ServiceLocation.xml
+/Users/mikearias/PetVault/PetVault/iOS/bin/iPhoneSimulator/Debug/Prism.xml
+/Users/mikearias/PetVault/PetVault/iOS/bin/iPhoneSimulator/Debug/Microsoft.Practices.Unity.xml
+/Users/mikearias/PetVault/PetVault/iOS/bin/iPhoneSimulator/Debug/Prism.Forms.xml
+/Users/mikearias/PetVault/PetVault/iOS/bin/iPhoneSimulator/Debug/Prism.Unity.Forms.xml
+/Users/mikearias/PetVault/PetVault/iOS/bin/iPhoneSimulator/Debug/Prism.Unity.Forms.dll.config

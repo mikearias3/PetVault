@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 
 using Foundation;
+using Microsoft.Practices.Unity;
+using Prism.Unity;
 using UIKit;
 
 namespace PetVault.iOS
@@ -14,9 +16,17 @@ namespace PetVault.iOS
         {
             global::Xamarin.Forms.Forms.Init();
 
-            LoadApplication(new App());
+            LoadApplication(new App(new iOSInitializer()));
 
             return base.FinishedLaunching(app, options);
+        }
+
+        public class iOSInitializer : IPlatformInitializer
+        {
+            public void RegisterTypes(IUnityContainer container)
+            {
+                
+            }
         }
     }
 }

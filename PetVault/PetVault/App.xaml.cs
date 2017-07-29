@@ -1,16 +1,29 @@
-﻿using PetVault.Views;
+﻿using System;
+using PetVault.ViewModels;
+using PetVault.Views;
+using PetVault.Views.Tabs;
+using Prism.Unity;
 using Xamarin.Forms;
 
 namespace PetVault
 {
-    public partial class App : Application
+    public partial class App : PrismApplication
     {
-        public App()
-        {
-            InitializeComponent();
+        public App(IPlatformInitializer initializer = null) : base(initializer) { }
+		protected override void OnInitialized()
+		{
+			InitializeComponent();
+            NavigationService.NavigateAsync(new System.Uri("http://www.PetVault/LoginPage", System.UriKind.Absolute));
+		}
+		
+		protected override void RegisterTypes()
+		{
+            Container.RegisterTypeForNavigation<LoginPage, LoginPageViewModel>();
+            Container.RegisterTypeForNavigation<HomePage, HomePageViewModel>();
+            Container.RegisterTypeForNavigation<DogPage, DogPageViewModel>();
+            Container.RegisterTypeForNavigation<CatPage, CatPageViewModel>();
+		}
 
-            MainPage = new NavigationPage(new LoginPage());
-        }
 
         protected override void OnStart()
         {
@@ -26,5 +39,6 @@ namespace PetVault
         {
             // Handle when your app resumes
         }
+
     }
 }

@@ -7,6 +7,8 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using Prism.Unity;
+using Microsoft.Practices.Unity;
 
 namespace PetVault.Droid
 {
@@ -23,6 +25,13 @@ namespace PetVault.Droid
             global::Xamarin.Forms.Forms.Init(this, bundle);
 
             LoadApplication(new App());
+        }
+
+        public class AndroidInitializer : IPlatformInitializer
+        {
+            public void RegisterTypes(IUnityContainer container)
+            {
+            }
         }
     }
 }
