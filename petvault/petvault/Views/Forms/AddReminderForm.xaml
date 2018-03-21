@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage Title="Agregar Recordatorio" 
+             xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"     
+             x:Class="petvault.Views.Forms.AddReminderForm">
+	<ContentPage.Content>
+        <StackLayout Padding="10">
+            <Label Text="Título:" 
+                   FontAttributes="Bold" />
+            <Entry x:Name="reminder" />
+            <Label Text="Mascota:" 
+                   FontAttributes="Bold" />
+            <Picker x:Name="petPicker" />
+            <Label Text="Tipo de Recordatorio:" 
+                   FontAttributes="Bold" />
+            <Picker x:Name="typePicker" />
+            <Label Text="Fecha:" 
+                   FontAttributes="Bold" />
+            <DatePicker x:Name="datePicker" />
+            <Label Text="Hora:" 
+                   FontAttributes="Bold" />
+            <TimePicker x:Name="timePicker" />
+            <StackLayout Orientation="Horizontal" 
+                         Padding="10">
+                <Button Text="Cancelar" 
+                        BackgroundColor="Maroon" 
+                        WidthRequest="120" 
+                        TextColor="White" 
+                        HorizontalOptions="CenterAndExpand" />
+                <Button Text="Agregar" 
+                        BackgroundColor="#009688" 
+                        WidthRequest="120" 
+                        TextColor="White" 
+                        HorizontalOptions="CenterAndExpand" />
+            </StackLayout>
+        </StackLayout>
+	</ContentPage.Content>
+</ContentPage>

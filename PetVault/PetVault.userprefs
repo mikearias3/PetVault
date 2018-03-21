@@ -1,16 +1,25 @@
-﻿<Properties StartupConfiguration="{6C3C894B-8EF9-444F-82C7-6876D649D8EC}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="PetVault/App.xaml.cs">
+﻿<Properties StartupConfiguration="{4A94EE80-D796-4CA6-921C-88AD4FA955DE}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="petvault/Models/Pet.cs">
     <Files>
-      <File FileName="PetVault/Views/LoginPage.xaml" Line="10" Column="26" />
-      <File FileName="PetVault/Views/LoginPage.xaml.cs" Line="1" Column="1" />
-      <File FileName="PetVault/App.xaml.cs" Line="11" Column="34" />
+      <File FileName="petvault/App.xaml.cs" Line="32" Column="80" />
+      <File FileName="petvault/Views/Tabs/PetPage.xaml" Line="15" Column="51" />
+      <File FileName="petvault/ViewModels/PetPageViewModel.cs" Line="20" Column="23" />
+      <File FileName="petvault/ViewModels/ReminderPageViewModel.cs" Line="30" Column="9" />
+      <File FileName="petvault/ViewModels/AddReminderFormViewModel.cs" Line="1" Column="1" />
+      <File FileName="petvault/Views/Tabs/ReminderPage.xaml" Line="8" Column="1" />
+      <File FileName="petvault/ViewModels/BaseViewModel.cs" Line="9" Column="30" />
+      <File FileName="iOS/Main.cs" Line="17" Column="1" />
+      <File FileName="petvault/Models/Pet.cs" Line="13" Column="6" />
     </Files>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.petvault.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.5459A11C-59CE-4203-B20A-0EA8DC678746" automaticSigning="False">
+    <MonoDevelop.MacDev.AppleDevelopmentTeam />
+  </MonoDevelop.Ide.ItemProperties.petvault.iOS>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.PetVault.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.EDEF933C-193C-437F-8009-D8365BA7577A" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.petvault.Droid PreferredExecutionTarget="Android.d6aa891c" />
   <MultiItemStartupConfigurations />
 </Properties>

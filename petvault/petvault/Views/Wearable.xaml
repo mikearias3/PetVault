@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="petvault.Views.Wearable">
+	<ContentPage.Content>
+        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Center">
+            <Label Text="Ingrese un dato" />
+            <Entry x:Name="dummy" HorizontalOptions="FillAndExpand" />
+            <Button Text="Guardar" Clicked="OnGuardarButtonClicked" />
+            <Label x:Name="result" />
+        </StackLayout>
+	</ContentPage.Content>
+</ContentPage>

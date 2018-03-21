@@ -5,7 +5,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
-namespace PetVault.iOS
+namespace petvault.iOS
 {
     public class Application
     {

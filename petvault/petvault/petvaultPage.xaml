@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:petvault" x:Class="petvault.petvaultPage">
+	<StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+        <Button Text="Wearable" Clicked="OnWearableButtonClicked" HorizontalOptions="Center" />
+        <Button Text="Client" Clicked="OnClientButtonClicked" HorizontalOptions="Center" />
+    </StackLayout>
+</ContentPage>
