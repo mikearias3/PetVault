@@ -12,7 +12,7 @@
             <ListView x:Name="listView"
                       ItemsSource="{Binding Pets}"
                       RowHeight="60"
-                      SeparatorVisibility="Default">
+                      SeparatorVisibility="None">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>

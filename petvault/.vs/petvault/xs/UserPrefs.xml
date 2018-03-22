@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{4A94EE80-D796-4CA6-921C-88AD4FA955DE}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="petvault/Views/Tabs/PetPage.xaml.cs">
+    <Files>
+      <File FileName="petvault/App.xaml.cs" Line="21" Column="85" />
+      <File FileName="petvault/Views/Tabs/PetPage.xaml" Line="15" Column="48" />
+      <File FileName="petvault/ViewModels/PetPageViewModel.cs" Line="51" Column="58" />
+      <File FileName="petvault/ViewModels/ReminderPageViewModel.cs" Line="26" Column="10" />
+      <File FileName="petvault/ViewModels/AddReminderFormViewModel.cs" Line="1" Column="1" />
+      <File FileName="petvault/Views/Tabs/ReminderPage.xaml" Line="35" Column="1" />
+      <File FileName="petvault/ViewModels/BaseViewModel.cs" Line="24" Column="17" />
+      <File FileName="iOS/Main.cs" Line="17" Column="1" />
+      <File FileName="petvault/Models/Pet.cs" Line="6" Column="21" />
+      <File FileName="petvault/Views/HomePage.xaml" Line="14" Column="1" />
+      <File FileName="petvault/Views/HomePage.xaml.cs" Line="13" Column="57" />
+      <File FileName="petvault/Views/Tabs/PetPage.xaml.cs" Line="15" Column="19" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.petvault.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.212F09D8-303E-4480-BD03-6675FBF38881" automaticSigning="False">
+    <MonoDevelop.MacDev.AppleDevelopmentTeam />
+  </MonoDevelop.Ide.ItemProperties.petvault.iOS>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.petvault.Droid PreferredExecutionTarget="Android.d6aa891c" />
+  <MultiItemStartupConfigurations />
+</Properties>

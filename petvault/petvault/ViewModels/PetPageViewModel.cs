@@ -19,7 +19,7 @@ namespace petvault.ViewModels
         public DelegateCommand FillListCommand { get; set; }
         INavigationService _navigationService;
         private ObservableCollection<Pet> _Pets = new ObservableCollection<Pet>();
-        public ObservableCollection<Pet> Pets 
+        public ObservableCollection<Pet> Pets
         { 
             get { return _Pets; } 
             set { _Pets = value; } 
@@ -30,7 +30,7 @@ namespace petvault.ViewModels
             _navigationService = navigationService;
             OnAddPetCommand = new DelegateCommand(async () => await OpenPetForm());
             FillListCommand = new DelegateCommand(async () => await GetPets());
-            FillListCommand.Execute();
+            //FillListCommand.Execute();
         }
 
         private async Task GetPets()
@@ -64,7 +64,9 @@ namespace petvault.ViewModels
         public void OnNavigatedTo(NavigationParameters parameters)
         {
             //TODO: Find a way to update only the new Pets to the list.
-            FillListCommand.Execute();
+            //FillListCommand.Execute();
         }
+
+
     }
 }

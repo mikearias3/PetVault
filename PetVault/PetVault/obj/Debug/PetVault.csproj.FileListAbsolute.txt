@@ -122,7 +122,6 @@
 /Users/mikearias/PetVault/petvault/petvault/bin/Debug/Plugin.Connectivity.pdb
 /Users/mikearias/PetVault/petvault/petvault/bin/Debug/Plugin.Connectivity.xml
 /Users/mikearias/PetVault/petvault/petvault/obj/Debug/petvault.csproj.App.config
-/Users/mikearias/PetVault/petvault/petvault/obj/Debug/petvault.csprojResolveAssemblyReference.cache
 /Users/mikearias/PetVault/petvault/petvault/obj/Debug/petvault.csproj.CoreCompileInputs.cache
 /Users/mikearias/PetVault/petvault/petvault/obj/Debug/petvault.App.xaml.g.cs
 /Users/mikearias/PetVault/petvault/petvault/obj/Debug/petvault.petvaultPage.xaml.g.cs

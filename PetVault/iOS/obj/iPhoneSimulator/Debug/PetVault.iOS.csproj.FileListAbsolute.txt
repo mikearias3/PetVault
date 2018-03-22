@@ -236,7 +236,9 @@
 /Users/mikearias/PetVault/petvault/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.5-11.2/optimized/placeholder-pet.png
 /Users/mikearias/PetVault/petvault/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.5-11.2/optimized/
 /Users/mikearias/PetVault/petvault/iOS/obj/iPhoneSimulator/Debug/petvault.iOS.csprojResolveAssemblyReference.cache
-/Users/mikearias/PetVault/petvault/iOS/obj/iPhoneSimulator/Debug/petvault.iOS.csproj.petvault.iOS.exe.config
 /Users/mikearias/PetVault/petvault/iOS/obj/iPhoneSimulator/Debug/petvault.iOS.csproj.CoreCompileInputs.cache
 /Users/mikearias/PetVault/petvault/iOS/obj/iPhoneSimulator/Debug/petvault.iOS.exe
 /Users/mikearias/PetVault/petvault/iOS/obj/iPhoneSimulator/Debug/petvault.iOS.pdb
+/Users/mikearias/PetVault/petvault/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.5-11.2/coremlc/_PartialAppManifest.items
+/Users/mikearias/PetVault/petvault/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.5-11.2/coremlc/_BundleResourceWithLogicalName.items
+/Users/mikearias/PetVault/petvault/iOS/obj/iPhoneSimulator/Debug/petvault.iOS.exe.config
