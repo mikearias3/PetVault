@@ -19,6 +19,7 @@ namespace petvault.Services
 
         public MobileServiceClient Client { get; set; } = null;
         IMobileServiceSyncTable<Pet> petTable;
+        IMobileServiceSyncTable<Reminder> reminderTable;
 
 #if AUTH
         public static bool UseAuth { get; set; } = true;
@@ -57,6 +58,7 @@ namespace petvault.Services
 
             //Define table
             store.DefineTable<Pet>();
+            store.DefineTable<Reminder>();
 
 
             //Initialize SyncContext
@@ -64,6 +66,7 @@ namespace petvault.Services
 
             //Get our sync table that will call out to azure
             petTable = Client.GetSyncTable<Pet>();
+            reminderTable = Client.GetSyncTable<Reminder>();
 
 
         }
@@ -86,6 +89,23 @@ namespace petvault.Services
 
         }
 
+        public async Task SyncReminder()
+        {
+            try
+            {
+                if (!CrossConnectivity.Current.IsConnected)
+                    return;
+
+                await reminderTable.PullAsync("allReminder", reminderTable.CreateQuery());
+
+                await Client.SyncContext.PushAsync();
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine("Unable to sync reminders, that is alright as we have offline capabilities: " + ex);
+            }
+        }
+
         public async Task<IEnumerable<Pet>> GetPets()
         {
             //Initialize & Sync
@@ -96,20 +116,34 @@ namespace petvault.Services
 
         }
 
+        public async Task<IEnumerable<Reminder>> GetReminders()
+        {
+            //Initialize & Sync
+            await Initialize();
+            await SyncReminder();
+
+            return await reminderTable.OrderBy(p => p.Date).ToEnumerableAsync(); ;
+
+        }
+
         public async Task<Pet> AddPet(Pet pet)
         {
             await Initialize();
-
-            //var pet = new Pet
-            //{
-            //    Name = name,
-            //    Age = age
-            //};
 
             await petTable.InsertAsync(pet);
 
             await SyncPet();
             return pet;
+        }
+
+        public async Task<Reminder> AddReminder(Reminder reminder)
+        {
+            await Initialize();
+
+            await reminderTable.InsertAsync(reminder);
+
+            await SyncReminder();
+            return reminder;
         }
 
 

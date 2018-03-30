@@ -12,7 +12,7 @@
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
-            <Image Source="placeholder-pet" 
+            <Image Source="placeholderpet" 
                    Aspect="AspectFill" 
                    Grid.Row="0" 
                    Grid.Column="0" />

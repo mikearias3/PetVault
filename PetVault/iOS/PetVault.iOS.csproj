@@ -206,7 +206,7 @@
     <BundleResource Include="Resources\header.png" />
     <BundleResource Include="Resources\plus.png" />
     <BundleResource Include="Resources\splash.png" />
-    <BundleResource Include="Resources\placeholder-pet.png" />
+    <BundleResource Include="Resources\placeholderpet.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />

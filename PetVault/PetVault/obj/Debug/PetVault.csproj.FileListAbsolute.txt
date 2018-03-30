@@ -135,3 +135,4 @@
 /Users/mikearias/PetVault/petvault/petvault/obj/Debug/petvault.Views.Forms.AddReminderForm.xaml.g.cs
 /Users/mikearias/PetVault/petvault/petvault/obj/Debug/petvault.dll
 /Users/mikearias/PetVault/petvault/petvault/obj/Debug/petvault.pdb
+/Users/mikearias/PetVault/petvault/petvault/obj/Debug/petvault.csprojResolveAssemblyReference.cache

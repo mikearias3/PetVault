@@ -7,7 +7,7 @@
         <StackLayout Padding="10">
             <Label Text="Título:" 
                    FontAttributes="Bold" />
-            <Entry x:Name="reminder" />
+            <Entry x:Name="reminder" Text="{Binding reminder.Title}" />
             <Label Text="Mascota:" 
                    FontAttributes="Bold" />
             <Picker x:Name="petPicker" />
@@ -26,12 +26,14 @@
                         BackgroundColor="Maroon" 
                         WidthRequest="120" 
                         TextColor="White" 
-                        HorizontalOptions="CenterAndExpand" />
+                        HorizontalOptions="CenterAndExpand"
+                        Command="{Binding OnCancelCommand}" />
                 <Button Text="Agregar" 
                         BackgroundColor="#009688" 
                         WidthRequest="120" 
                         TextColor="White" 
-                        HorizontalOptions="CenterAndExpand" />
+                        HorizontalOptions="CenterAndExpand"
+                        Command="{Binding OnSaveReminderCommand}" />
             </StackLayout>
         </StackLayout>
 	</ContentPage.Content>

@@ -12,7 +12,7 @@ using System.Linq;
 
 namespace petvault.ViewModels
 {
-    public class PetPageViewModel : BaseViewModel, INavigatedAware
+    public class PetPageViewModel : BaseViewModel
     {
         AzureService azureService;
         public DelegateCommand OnAddPetCommand { get; set; }
@@ -30,15 +30,11 @@ namespace petvault.ViewModels
             _navigationService = navigationService;
             OnAddPetCommand = new DelegateCommand(async () => await OpenPetForm());
             FillListCommand = new DelegateCommand(async () => await GetPets());
-            //FillListCommand.Execute();
         }
 
         private async Task GetPets()
         {
             var pets = await azureService.GetPets();
-
-            //if (Pets == null)
-                //Pets = new ObservableCollection<Pet>();
 
             foreach (var pet in pets)
             {
@@ -47,26 +43,11 @@ namespace petvault.ViewModels
                     _Pets.Add(pet);
                 }
             }
-
-            //Pets = new ObservableCollection<Pet>(pets);
         }
 
         async Task OpenPetForm()
         {
             await _navigationService.NavigateAsync("AddPetForm");
         }
-
-        public void OnNavigatedFrom(NavigationParameters parameters)
-        {
-            
-        }
-
-        public void OnNavigatedTo(NavigationParameters parameters)
-        {
-            //TODO: Find a way to update only the new Pets to the list.
-            //FillListCommand.Execute();
-        }
-
-
     }
 }
