@@ -2,25 +2,35 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Linq;
 using System.Threading.Tasks;
 using petvault.Helpers;
 using petvault.Models;
+using petvault.Services;
 using Prism.Commands;
 using Prism.Navigation;
+using Xamarin.Forms;
 
 namespace petvault.ViewModels
 {
     public class ReminderPageViewModel : BaseViewModel
     {
-        INavigationService _navigationService;
+        AzureService azureService;
         public DelegateCommand OnAddReminderCommand { get; set; }
-        public ObservableCollection<Reminder> Reminders { get; set; }
+        public DelegateCommand FillListCommand { get; set; }
+		INavigationService _navigationService;
+        private ObservableCollection<Reminder> _Reminders = new ObservableCollection<Reminder>();
+        public ObservableCollection<Reminder> Reminders
+        {
+            get { return _Reminders; }
+            set { _Reminders = value; }
+        }
         public ReminderPageViewModel(INavigationService navigationService)
         {
+            azureService = DependencyService.Get<AzureService>();
 			_navigationService = navigationService;
-            Reminders = new ObservableCollection<Reminder>();
-            GetItems();
             OnAddReminderCommand = new DelegateCommand(async () => await OpenReminderForm());
+            FillListCommand = new DelegateCommand(async () => await GetReminders());
         }
 
         async Task OpenReminderForm()
@@ -28,13 +38,16 @@ namespace petvault.ViewModels
             await _navigationService.NavigateAsync("AddReminderForm");
         }
 
-        public void GetItems()
+        private async Task GetReminders()
         {
-            //TODO: Get Reminders from Azure.
-            for (int i = 0; i < 5; i++)
+            var reminders = await azureService.GetReminders();
+
+            foreach (var reminder in reminders)
             {
-                var reminder = new Reminder() { Title = "Recordatorio " + i, Date = DateTime.Now, Type = "vet" };
-                Reminders.Add(reminder);
+                if (_Reminders.Where(p => p.Id == reminder.Id).Count() == 0)
+                {
+                    _Reminders.Add(reminder);
+                }
             }
         }
     }

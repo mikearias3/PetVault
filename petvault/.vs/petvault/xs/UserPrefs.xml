@@ -1,13 +1,14 @@
 ﻿<Properties StartupConfiguration="{4A94EE80-D796-4CA6-921C-88AD4FA955DE}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="petvault/Models/Reminder.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="petvault/Views/Tabs/PetPage.xaml.cs">
     <Files>
       <File FileName="petvault/App.xaml.cs" Line="38" Column="1" />
       <File FileName="petvault/Services/AzureService.cs" Line="146" Column="29" />
-      <File FileName="petvault/ViewModels/AddPetFormViewModel.cs" Line="14" Column="9" />
-      <File FileName="petvault/ViewModels/AddReminderFormViewModel.cs" Line="22" Column="34" />
-      <File FileName="petvault/Views/Forms/AddPetForm.xaml" Line="40" Column="1" />
-      <File FileName="petvault/Views/Forms/AddReminderForm.xaml" Line="39" Column="1" />
-      <File FileName="petvault/Models/Reminder.cs" Line="1" Column="1" />
+      <File FileName="petvault/ViewModels/ReminderPageViewModel.cs" Line="44" Column="13" />
+      <File FileName="petvault/ViewModels/PetPageViewModel.cs" Line="35" Column="9" />
+      <File FileName="petvault/Views/Tabs/PetPage.xaml" Line="35" Column="1" />
+      <File FileName="petvault/Views/Tabs/ReminderPage.xaml" Line="35" Column="1" />
+      <File FileName="petvault/Views/Tabs/PetPage.xaml.cs" Line="15" Column="3" />
+      <File FileName="petvault/Views/Tabs/ReminderPage.xaml.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.petvault.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.5459A11C-59CE-4203-B20A-0EA8DC678746" automaticSigning="False">
