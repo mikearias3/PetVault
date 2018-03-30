@@ -16,10 +16,12 @@
             <Picker x:Name="typePicker" />
             <Label Text="Fecha:" 
                    FontAttributes="Bold" />
-            <DatePicker x:Name="datePicker" />
+            <DatePicker x:Name="datePicker"
+                        Date="{Binding Date}" />
             <Label Text="Hora:" 
                    FontAttributes="Bold" />
-            <TimePicker x:Name="timePicker" />
+            <TimePicker x:Name="timePicker"
+                        Time="{Binding Time}" />
             <StackLayout Orientation="Horizontal" 
                          Padding="10">
                 <Button Text="Cancelar" 
