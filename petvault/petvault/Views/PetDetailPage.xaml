@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage Title="{Binding pet.Name}"
+             xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="petvault.Views.PetDetailPage">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="200" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Image Source="placeholderpet" 
+                   Aspect="AspectFill" 
+                   Grid.Row="0" 
+                   Grid.Column="0" />
+            <StackLayout Padding="5" 
+                         Orientation="Vertical" 
+                         Grid.Row="1" 
+                         Grid.Column="0">
+                <Label Text="Nombre:" 
+                       FontAttributes="Bold" />
+                <Entry x:Name="petName"
+                       Text="{Binding pet.Name}" />
+                <Label Text="Edad:" 
+                       FontAttributes="Bold" />
+                <Entry x:Name="petAge" 
+                       Keyboard="Numeric"
+                       Text="{Binding pet.Age}" />
+                <Button Text="Guardar" 
+                        BackgroundColor="#009688" 
+                        TextColor="White"
+                        Command="{Binding OnSavePetCommand}" />
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

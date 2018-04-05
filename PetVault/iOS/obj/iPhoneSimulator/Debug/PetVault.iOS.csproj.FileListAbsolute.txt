@@ -242,3 +242,5 @@
 /Users/mikearias/PetVault/petvault/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.5-11.2/coremlc/_BundleResourceWithLogicalName.items
 /Users/mikearias/PetVault/petvault/iOS/obj/iPhoneSimulator/Debug/petvault.iOS.exe.config
 /Users/mikearias/PetVault/petvault/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.5-11.2/optimized/placeholderpet.png
+/Users/mikearias/PetVault/petvault/iOS/bin/iPhoneSimulator/Debug/PropertyChanged.dll
+/Users/mikearias/PetVault/petvault/iOS/bin/iPhoneSimulator/Debug/PropertyChanged.xml

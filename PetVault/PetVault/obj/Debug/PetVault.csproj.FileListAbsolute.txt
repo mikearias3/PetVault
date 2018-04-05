@@ -136,3 +136,6 @@
 /Users/mikearias/PetVault/petvault/petvault/obj/Debug/petvault.dll
 /Users/mikearias/PetVault/petvault/petvault/obj/Debug/petvault.pdb
 /Users/mikearias/PetVault/petvault/petvault/obj/Debug/petvault.csprojResolveAssemblyReference.cache
+/Users/mikearias/PetVault/petvault/petvault/obj/Debug/petvault.Views.PetDetailPage.xaml.g.cs
+/Users/mikearias/PetVault/petvault/petvault/bin/Debug/PropertyChanged.dll
+/Users/mikearias/PetVault/petvault/petvault/bin/Debug/PropertyChanged.xml

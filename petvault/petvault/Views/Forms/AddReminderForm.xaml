@@ -7,7 +7,8 @@
         <StackLayout Padding="10">
             <Label Text="Título:" 
                    FontAttributes="Bold" />
-            <Entry x:Name="reminder" Text="{Binding reminder.Title}" />
+            <Entry x:Name="reminder" 
+                   Text="{Binding reminder.Title}" />
             <Label Text="Mascota:" 
                    FontAttributes="Bold" />
             <Picker x:Name="petPicker" />

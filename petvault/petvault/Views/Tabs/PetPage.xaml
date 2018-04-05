@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage Title="Mascotas" 
              Icon="pet"
+             xmlns:local="clr-namespace:petvault.Extensions;assembly=petvault"
              xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              x:Class="petvault.Views.Tabs.PetPage">
@@ -9,11 +10,12 @@
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout Padding="20">
-            <ListView x:Name="listView"
-                      ItemsSource="{Binding Pets}"
-                      RowHeight="60"
-                      SeparatorVisibility="None">
-                <ListView.ItemTemplate>
+            <local:ExtendedListView x:Name="listView"
+                                    ItemsSource="{Binding Pets}"
+                                    RowHeight="60"
+                                    TappedCommand="{Binding OnOpenPetCommand}"
+                                    SeparatorVisibility="None">
+                <local:ExtendedListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
                             <ViewCell.View>
@@ -27,8 +29,8 @@
                             </ViewCell.View>
                         </ViewCell>
                     </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+                </local:ExtendedListView.ItemTemplate>
+            </local:ExtendedListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

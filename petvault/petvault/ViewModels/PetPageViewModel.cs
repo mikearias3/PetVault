@@ -15,6 +15,7 @@ namespace petvault.ViewModels
     public class PetPageViewModel : BaseViewModel
     {
         AzureService azureService;
+        public DelegateCommand<Pet> OnOpenPetCommand { get; set; }
         public DelegateCommand OnAddPetCommand { get; set; }
         public DelegateCommand FillListCommand { get; set; }
         INavigationService _navigationService;
@@ -28,6 +29,7 @@ namespace petvault.ViewModels
         {
             azureService = DependencyService.Get<AzureService>();
             _navigationService = navigationService;
+            OnOpenPetCommand = new DelegateCommand<Pet>(async (param) => await OpenPetDetail(param));
             OnAddPetCommand = new DelegateCommand(async () => await OpenPetForm());
             FillListCommand = new DelegateCommand(async () => await GetPets());
         }
@@ -43,6 +45,13 @@ namespace petvault.ViewModels
                     _Pets.Add(pet);
                 }
             }
+        }
+
+        async Task OpenPetDetail(Pet pet)
+        {
+            var navParams = new NavigationParameters();
+            navParams.Add("pet", pet);
+            await _navigationService.NavigateAsync("PetDetailPage", navParams);
         }
 
         async Task OpenPetForm()

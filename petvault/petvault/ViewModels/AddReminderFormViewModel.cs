@@ -15,15 +15,13 @@ namespace petvault.ViewModels
         public DelegateCommand OnCancelCommand { get; set; }
         INavigationService _navigationService;
         public Reminder reminder { get; set; }
-        public DateTime Date { get; set; }
+        public DateTime Date { get; set; } = DateTime.Now;
         public TimeSpan Time { get; set; }
         public AddReminderFormViewModel(INavigationService navigationService)
         {
             azureService = DependencyService.Get<AzureService>();
             _navigationService = navigationService;
             reminder = new Reminder();
-            Date = new DateTime();
-            Time = new TimeSpan();
             OnSaveReminderCommand = new DelegateCommand(async () => await RunSafe(SaveReminder()));
             OnCancelCommand = new DelegateCommand(async () => await _navigationService.GoBackAsync());
         }
