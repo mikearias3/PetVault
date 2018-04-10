@@ -139,3 +139,6 @@
 /Users/mikearias/PetVault/petvault/petvault/obj/Debug/petvault.Views.PetDetailPage.xaml.g.cs
 /Users/mikearias/PetVault/petvault/petvault/bin/Debug/PropertyChanged.dll
 /Users/mikearias/PetVault/petvault/petvault/bin/Debug/PropertyChanged.xml
+/Users/mikearias/PetVault/petvault/petvault/obj/Debug/petvault.Views.MapPage.xaml.g.cs
+/Users/mikearias/PetVault/petvault/petvault/bin/Debug/Xamarin.Forms.Maps.dll
+/Users/mikearias/PetVault/petvault/petvault/bin/Debug/Xamarin.Forms.Maps.xml

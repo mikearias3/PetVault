@@ -29,6 +29,10 @@
                 <Entry x:Name="petAge" 
                        Keyboard="Numeric"
                        Text="{Binding pet.Age}" />
+                <Button Text="Localizar Mascota"
+                        BackgroundColor="Teal"
+                        TextColor="White"
+                        Command="{Binding OnFindPetCommand}" />
                 <Button Text="Guardar" 
                         BackgroundColor="#009688" 
                         TextColor="White"

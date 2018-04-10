@@ -244,3 +244,6 @@
 /Users/mikearias/PetVault/petvault/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.5-11.2/optimized/placeholderpet.png
 /Users/mikearias/PetVault/petvault/iOS/bin/iPhoneSimulator/Debug/PropertyChanged.dll
 /Users/mikearias/PetVault/petvault/iOS/bin/iPhoneSimulator/Debug/PropertyChanged.xml
+/Users/mikearias/PetVault/petvault/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Maps.dll
+/Users/mikearias/PetVault/petvault/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Maps.iOS.dll
+/Users/mikearias/PetVault/petvault/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Maps.xml

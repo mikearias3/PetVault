@@ -43,6 +43,8 @@
 	<key>XSAppIconAssets</key>
 	<string>Assets.xcassets/AppIcon.appiconset</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>This app needs access location when open.</string>
+	<string>We are using your location</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Can we user your location</string>
 </dict>
 </plist>

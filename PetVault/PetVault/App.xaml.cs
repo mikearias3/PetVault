@@ -32,6 +32,7 @@ namespace petvault
             containerRegistry.RegisterForNavigation<AddPetForm, AddPetFormViewModel>();
             containerRegistry.RegisterForNavigation<AddReminderForm, AddReminderFormViewModel>();
             containerRegistry.RegisterForNavigation<PetDetailPage, PetDetailPageViewModel>();
+            containerRegistry.RegisterForNavigation<MapPage, MapPageViewModel>();
 			containerRegistry.RegisterInstance<IUserDialogs>(UserDialogs.Instance);
         }
     }

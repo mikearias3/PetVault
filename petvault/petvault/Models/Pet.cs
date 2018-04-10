@@ -8,5 +8,7 @@ namespace petvault.Models
         public string Id { get; set; }
         public string Name { get; set; }
         public int Age { get; set; }
+        public double LastLatitude { get; set; }
+        public double LastLongitude { get; set; }
     }
 }
