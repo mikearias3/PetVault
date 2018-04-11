@@ -15,7 +15,9 @@ namespace petvault.ViewModels
         {
             _navigationService = navigationService;
             pet = new Pet();
-            OnFindPetCommand = new DelegateCommand(async () => await RunSafe(OpenMap()));
+            //OnFindPetCommand = new DelegateCommand(async () => await RunSafe(OpenMap()));
+            OnFindPetCommand = new DelegateCommand(async () => await OpenMap());
+
         }
 
         async Task OpenMap()

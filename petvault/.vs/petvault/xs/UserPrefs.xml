@@ -1,19 +1,14 @@
 ﻿<Properties StartupConfiguration="{4A94EE80-D796-4CA6-921C-88AD4FA955DE}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="petvault/Services/AzureService.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="petvault/ViewModels/PetPageViewModel.cs">
     <Files>
       <File FileName="petvault/App.xaml.cs" Line="38" Column="6" />
       <File FileName="petvault/Services/AzureService.cs" Line="69" Column="61" />
-      <File FileName="petvault/Views/PetDetailPage.xaml" Line="35" Column="59" />
+      <File FileName="petvault/Views/PetDetailPage.xaml" Line="44" Column="1" />
       <File FileName="petvault/ViewModels/PetDetailPageViewModel.cs" Line="12" Column="9" />
-      <File FileName="petvault/ViewModels/MapPageViewModel.cs" Line="26" Column="1" />
-      <File FileName="petvault/Views/MapPage.xaml" Line="8" Column="54" />
-      <File FileName="petvault/Views/MapPage.xaml.cs" Line="11" Column="6" />
+      <File FileName="petvault/ViewModels/MapPageViewModel.cs" Line="27" Column="40" />
+      <File FileName="petvault/Views/MapPage.xaml.cs" Line="24" Column="4" />
+      <File FileName="petvault/Views/Tabs/PetPage.xaml.cs" Line="15" Column="3" />
       <File FileName="petvault/ViewModels/PetPageViewModel.cs" Line="52" Column="13" />
-      <File FileName="petvault/Views/Tabs/PetPage.xaml" Line="37" Column="1" />
-      <File FileName="iOS/AppDelegate.cs" Line="19" Column="38" />
-      <File FileName="iOS/Info.plist" />
-      <File FileName="petvault/Models/Pet.cs" Line="11" Column="49" />
-      <File FileName="petvault/Services/PetPositionsManager.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.petvault.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.5459A11C-59CE-4203-B20A-0EA8DC678746" automaticSigning="False" />
