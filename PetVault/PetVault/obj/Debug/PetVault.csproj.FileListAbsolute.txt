@@ -87,6 +87,7 @@
 /Users/mikearias/PetVault/petvault/petvault/bin/Debug/Splat.dll
 /Users/mikearias/PetVault/petvault/petvault/bin/Debug/SQLitePCLRaw.batteries_green.dll
 /Users/mikearias/PetVault/petvault/petvault/bin/Debug/SQLitePCLRaw.core.dll
+/Users/mikearias/PetVault/petvault/petvault/bin/Debug/SuaveControls.FloatingActionButton.dll
 /Users/mikearias/PetVault/petvault/petvault/bin/Debug/System.Net.Http.Extensions.dll
 /Users/mikearias/PetVault/petvault/petvault/bin/Debug/System.Net.Http.Primitives.dll
 /Users/mikearias/PetVault/petvault/petvault/bin/Debug/System.Runtime.InteropServices.RuntimeInformation.dll
@@ -141,5 +142,3 @@
 /Users/mikearias/PetVault/petvault/petvault/obj/Debug/petvault.Views.MapPage.xaml.g.cs
 /Users/mikearias/PetVault/petvault/petvault/obj/Debug/petvault.dll
 /Users/mikearias/PetVault/petvault/petvault/obj/Debug/petvault.pdb
-/Users/mikearias/PetVault/petvault/petvault/obj/Debug/petvault.csprojResolveAssemblyReference.cache
-/Users/mikearias/PetVault/petvault/petvault/bin/Debug/SuaveControls.FloatingActionButton.dll

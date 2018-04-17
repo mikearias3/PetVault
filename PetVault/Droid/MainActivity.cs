@@ -9,6 +9,7 @@ using Android.Widget;
 using Android.OS;
 using Prism;
 using Prism.Ioc;
+using Acr.UserDialogs;
 
 namespace petvault.Droid
 {
@@ -22,10 +23,10 @@ namespace petvault.Droid
 
             base.OnCreate(bundle);
 
+			Xamarin.FormsMaps.Init(this, bundle);
+			UserDialogs.Init(this);
             global::Xamarin.Forms.Forms.Init(this, bundle);
-
-            Xamarin.FormsMaps.Init(this, bundle);
-
+			
             LoadApplication(new App(new AndroidInitializer()));
 
         }
