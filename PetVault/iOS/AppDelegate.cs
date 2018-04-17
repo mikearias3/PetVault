@@ -7,6 +7,7 @@ using Prism.Ioc;
 using Prism.Unity;
 using UIKit;
 using Microsoft.WindowsAzure;
+using SuaveControls.FloatingActionButton.iOS.Renderers;
 
 namespace petvault.iOS
 {
@@ -29,7 +30,7 @@ namespace petvault.iOS
             Microsoft.WindowsAzure.MobileServices.CurrentPlatform.Init();
 
             LoadApplication(new App(new iOSInitializer()));
-
+            FloatingActionButtonRenderer.InitRenderer();
             return base.FinishedLaunching(app, options);
         }
         public class iOSInitializer : IPlatformInitializer

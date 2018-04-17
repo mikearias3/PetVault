@@ -142,3 +142,4 @@
 /Users/mikearias/PetVault/petvault/petvault/obj/Debug/petvault.dll
 /Users/mikearias/PetVault/petvault/petvault/obj/Debug/petvault.pdb
 /Users/mikearias/PetVault/petvault/petvault/obj/Debug/petvault.csprojResolveAssemblyReference.cache
+/Users/mikearias/PetVault/petvault/petvault/bin/Debug/SuaveControls.FloatingActionButton.dll

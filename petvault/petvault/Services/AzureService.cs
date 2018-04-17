@@ -19,6 +19,7 @@ namespace petvault.Services
 
         public MobileServiceClient Client { get; set; } = null;
         IMobileServiceSyncTable<Pet> petTable;
+        IMobileServiceSyncTable<PetPositions> petPositionsTable;
         IMobileServiceSyncTable<Reminder> reminderTable;
 
 #if AUTH
@@ -58,6 +59,7 @@ namespace petvault.Services
 
             //Define table
             store.DefineTable<Pet>();
+            store.DefineTable<PetPositions>();
             store.DefineTable<Reminder>();
 
 
@@ -66,6 +68,7 @@ namespace petvault.Services
 
             //Get our sync table that will call out to azure
             petTable = Client.GetSyncTable<Pet>();
+            petPositionsTable = Client.GetSyncTable<PetPositions>();
             reminderTable = Client.GetSyncTable<Reminder>();
 
 
@@ -85,6 +88,24 @@ namespace petvault.Services
             catch (Exception ex)
             {
                 Debug.WriteLine("Unable to sync pets, that is alright as we have offline capabilities: " + ex);
+            }
+
+        }
+
+        public async Task SyncPetPositions()
+        {
+            try
+            {
+                if (!CrossConnectivity.Current.IsConnected)
+                    return;
+
+                await petPositionsTable.PullAsync("allPetPositions", petPositionsTable.CreateQuery());
+
+                await Client.SyncContext.PushAsync();
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine("Unable to sync pet positions, that is alright as we have offline capabilities: " + ex);
             }
 
         }
@@ -113,6 +134,16 @@ namespace petvault.Services
             await SyncPet();
 
             return await petTable.OrderBy(p => p.Name).ToEnumerableAsync(); ;
+
+        }
+
+        public async Task<IEnumerable<PetPositions>> GetPetPositions()
+        {
+            //Initialize & Sync
+            await Initialize();
+            await SyncPetPositions();
+
+            return await petPositionsTable.OrderBy(p => p.createdAt).ToEnumerableAsync(); ;
 
         }
 

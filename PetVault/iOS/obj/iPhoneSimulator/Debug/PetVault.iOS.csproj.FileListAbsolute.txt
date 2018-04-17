@@ -247,3 +247,6 @@
 /Users/mikearias/PetVault/petvault/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Maps.dll
 /Users/mikearias/PetVault/petvault/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Maps.iOS.dll
 /Users/mikearias/PetVault/petvault/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Maps.xml
+/Users/mikearias/PetVault/petvault/iOS/bin/iPhoneSimulator/Debug/SuaveControls.FloatingActionButton.dll
+/Users/mikearias/PetVault/petvault/iOS/bin/iPhoneSimulator/Debug/SuaveControls.FloatingActionButton.iOS.dll
+/Users/mikearias/PetVault/petvault/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.5-11.2/optimized/tracking.png

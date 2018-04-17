@@ -1,20 +1,20 @@
-﻿<Properties StartupConfiguration="{4A94EE80-D796-4CA6-921C-88AD4FA955DE}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="petvault/ViewModels/PetPageViewModel.cs">
+﻿<Properties StartupConfiguration="{519660F6-E431-4E70-9620-C67788546C08}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="petvault/Views/MapPage.xaml.cs">
     <Files>
       <File FileName="petvault/App.xaml.cs" Line="38" Column="6" />
-      <File FileName="petvault/Services/AzureService.cs" Line="69" Column="61" />
-      <File FileName="petvault/Views/PetDetailPage.xaml" Line="44" Column="1" />
-      <File FileName="petvault/ViewModels/PetDetailPageViewModel.cs" Line="12" Column="9" />
-      <File FileName="petvault/ViewModels/MapPageViewModel.cs" Line="27" Column="40" />
-      <File FileName="petvault/Views/MapPage.xaml.cs" Line="24" Column="4" />
-      <File FileName="petvault/Views/Tabs/PetPage.xaml.cs" Line="15" Column="3" />
-      <File FileName="petvault/ViewModels/PetPageViewModel.cs" Line="52" Column="13" />
+      <File FileName="petvault/Services/AzureService.cs" Line="148" Column="1" />
+      <File FileName="petvault/Services/PetPositionsManager.cs" Line="25" Column="57" />
+      <File FileName="petvault/ViewModels/MapPageViewModel.cs" Line="50" Column="14" />
+      <File FileName="petvault/Views/MapPage.xaml" Line="43" Column="67" />
+      <File FileName="petvault/Views/MapPage.xaml.cs" Line="21" Column="13" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.petvault.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.5459A11C-59CE-4203-B20A-0EA8DC678746" automaticSigning="False" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/mikearias/PetVault/petvault/petvault/ViewModels/MapPageViewModel.cs" relfile="petvault/ViewModels/MapPageViewModel.cs" line="56" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.petvault.Droid PreferredExecutionTarget="Android.Android_Accelerated_Nougat" />

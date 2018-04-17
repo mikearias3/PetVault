@@ -33,9 +33,9 @@ namespace petvault.Views
             Debug.WriteLine("Position Longitude: {0}", position.Longitude);
 
             PetPositions item = new PetPositions { 
-                PetName = dummy.Text, 
-                Latitude = position.Latitude.ToString(), 
-                Longitude = position.Longitude.ToString() 
+                //PetName = dummy.Text, 
+                Latitude = position.Latitude, 
+                Longitude = position.Longitude
             };
             await MobileService.GetTable<PetPositions>().InsertAsync(item);
             result.Text = "Saved data.";

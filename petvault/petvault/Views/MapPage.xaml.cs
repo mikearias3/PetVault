@@ -16,6 +16,11 @@ namespace petvault.Views
             InitializeComponent();
         }
 
+        void OnTrackingClicked(object sender, System.EventArgs e)
+        {
+            ((MapPageViewModel)BindingContext).OnTrackingCommand.Execute(PetMap);
+        }
+
         protected override void OnAppearing()
         {
             base.OnAppearing();

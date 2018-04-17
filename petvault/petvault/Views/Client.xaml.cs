@@ -24,7 +24,7 @@ namespace petvault.Views
                 ObservableCollection<string> list = new ObservableCollection<string>();
                 foreach (var item in data)
                 {
-                    list.Add(item.PetName + " " + item.Latitude + "," + item.Longitude);
+                    //list.Add(item.PetName + " " + item.Latitude + "," + item.Longitude);
                 }
                 listView.ItemsSource = list;
             }
