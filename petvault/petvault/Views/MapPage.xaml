@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             xmlns:maps="clr-namespace:petvault.Controls;assembly=petvault"
              xmlns:local="clr-namespace:SuaveControls.Views;assembly=SuaveControls.FloatingActionButton"
              x:Class="petvault.Views.MapPage">
     <ContentPage.Content>
@@ -25,7 +25,7 @@
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
-            <maps:Map Grid.Row="0"
+            <maps:CustomMap Grid.Row="0"
                       Grid.Column="0"
                       VerticalOptions="FillAndExpand"
                       HorizontalOptions="FillAndExpand"

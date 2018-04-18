@@ -1,14 +1,15 @@
-﻿<Properties StartupConfiguration="{519660F6-E431-4E70-9620-C67788546C08}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Droid/Properties/AndroidManifest.xml">
+﻿<Properties StartupConfiguration="{4A94EE80-D796-4CA6-921C-88AD4FA955DE}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Droid/CustomMapRenderer.cs">
     <Files>
       <File FileName="petvault/App.xaml.cs" Line="38" Column="6" />
-      <File FileName="petvault/Services/AzureService.cs" Line="148" Column="1" />
       <File FileName="petvault/Services/PetPositionsManager.cs" Line="25" Column="57" />
-      <File FileName="petvault/ViewModels/MapPageViewModel.cs" Line="42" Column="34" />
-      <File FileName="petvault/Views/MapPage.xaml" Line="47" Column="1" />
-      <File FileName="petvault/Views/MapPage.xaml.cs" Line="21" Column="65" />
-      <File FileName="Droid/MainActivity.cs" Line="26" Column="13" />
-      <File FileName="Droid/Properties/AndroidManifest.xml" Line="1" Column="1" />
+      <File FileName="petvault/ViewModels/MapPageViewModel.cs" Line="56" Column="9" />
+      <File FileName="petvault/Views/MapPage.xaml" Line="31" Column="52" />
+      <File FileName="petvault/Views/MapPage.xaml.cs" Line="19" Column="10" />
+      <File FileName="petvault/Controls/CustomMap.cs" Line="5" Column="11" />
+      <File FileName="iOS/CustomMapRenderer.cs" Line="26" Column="1" />
+      <File FileName="petvault/ViewModels/BaseViewModel.cs" Line="1" Column="1" />
+      <File FileName="Droid/CustomMapRenderer.cs" Line="21" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.petvault.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.5459A11C-59CE-4203-B20A-0EA8DC678746" automaticSigning="False" />
@@ -17,6 +18,6 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.petvault.Droid PreferredExecutionTarget="Android.d6aa891c" />
+  <MonoDevelop.Ide.ItemProperties.petvault.Droid PreferredExecutionTarget="Android.Android_Accelerated_Nougat" />
   <MultiItemStartupConfigurations />
 </Properties>

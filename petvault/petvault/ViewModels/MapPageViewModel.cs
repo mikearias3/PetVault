@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Threading.Tasks;
+using petvault.Controls;
 using petvault.Models;
 using petvault.Services;
 using Plugin.Geolocator;
@@ -18,18 +19,18 @@ namespace petvault.ViewModels
         AzureService azureService;
         public Pet pet { get; set; }
         public IEnumerable<PetPositions> petPositions = new ObservableCollection<PetPositions>();
-		public DelegateCommand<Map> OnMapLoadCommand { get; set; }
-        public DelegateCommand<Map> OnTrackingCommand { get; set; }
+		public DelegateCommand<CustomMap> OnMapLoadCommand { get; set; }
+        public DelegateCommand<CustomMap> OnTrackingCommand { get; set; }
         INavigationService _navigationService;
         public MapPageViewModel(INavigationService navigationService)
         {
             azureService = DependencyService.Get<AzureService>();
             _navigationService = navigationService;
-            OnMapLoadCommand = new DelegateCommand<Map>(async (param) => await LoadMap(param));
-            OnTrackingCommand = new DelegateCommand<Map>(async (param) => await LoadPetPositions(param));
+            OnMapLoadCommand = new DelegateCommand<CustomMap>(async (param) => await LoadMap(param));
+            OnTrackingCommand = new DelegateCommand<CustomMap>(async (param) => await LoadPetPositions(param));
         }
 
-        private async Task LoadPetPositions(Map _petMap)
+        private async Task LoadPetPositions(CustomMap _petMap)
         {
             var pps = await azureService.GetPetPositions();
 
@@ -39,6 +40,8 @@ namespace petvault.ViewModels
 
             foreach (var pp in petPositions)
             {
+                _petMap.RouteCoordinates.Add(new Position(pp.Latitude, pp.Longitude));
+
                 var pin = new Pin
                 {
                     Type = PinType.Generic,
@@ -47,9 +50,11 @@ namespace petvault.ViewModels
                 };
                 _petMap.Pins.Add(pin);
             }
+
+            _petMap.MoveToRegion(MapSpan.FromCenterAndRadius(_petMap.RouteCoordinates.Last(), Distance.FromMiles(1.0)));
         }
 
-        async Task LoadMap(Map _petMap)
+        async Task LoadMap(CustomMap _petMap)
         {
             await Task.Delay(TimeSpan.FromSeconds(5));
             //var locator = CrossGeolocator.Current;
