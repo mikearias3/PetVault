@@ -142,3 +142,4 @@
 /Users/mikearias/PetVault/petvault/petvault/obj/Debug/petvault.Views.MapPage.xaml.g.cs
 /Users/mikearias/PetVault/petvault/petvault/obj/Debug/petvault.dll
 /Users/mikearias/PetVault/petvault/petvault/obj/Debug/petvault.pdb
+/Users/mikearias/PetVault/petvault/petvault/obj/Debug/petvault.csprojResolveAssemblyReference.cache

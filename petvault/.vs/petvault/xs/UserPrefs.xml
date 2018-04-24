@@ -1,18 +1,18 @@
-﻿<Properties StartupConfiguration="{519660F6-E431-4E70-9620-C67788546C08}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="petvault/Views/HomePage.xaml">
+﻿<Properties StartupConfiguration="{4A94EE80-D796-4CA6-921C-88AD4FA955DE}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="petvault/App.xaml.cs">
     <Files>
-      <File FileName="petvault/App.xaml.cs" Line="38" Column="6" />
+      <File FileName="petvault/App.xaml.cs" Line="25" Column="10" />
       <File FileName="Droid/Resources/drawable/splash_background.xml" Line="10" Column="12" />
       <File FileName="Droid/Resources/values/styles.xml" Line="18" Column="42" />
       <File FileName="Droid/MainActivity.cs" Line="41" Column="6" />
-      <File FileName="petvault/Views/Tabs/ReminderPage.xaml" Line="3" Column="31" />
+      <File FileName="petvault/Views/Tabs/ReminderPage.xaml" Line="35" Column="1" />
       <File FileName="petvault/Views/HomePage.xaml" Line="14" Column="1" />
       <File FileName="Droid/Splash.cs" Line="23" Column="12" />
-      <File FileName="petvault/Views/Tabs/PetPage.xaml" Line="3" Column="26" />
+      <File FileName="petvault/Views/Tabs/PetPage.xaml" Line="37" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.petvault.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.D4862424-6F64-40E0-B6CD-D3B7E494AA00" automaticSigning="False" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.petvault.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.80b8270bc4de18f93e4ad942275073aca700343f" automaticSigning="False" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
