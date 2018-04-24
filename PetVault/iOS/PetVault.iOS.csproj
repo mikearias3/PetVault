@@ -227,6 +227,10 @@
     <BundleResource Include="Resources\placeholderpet.png" />
     <BundleResource Include="Resources\tracking.png" />
   </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\petbar.png" />
+    <AndroidResource Include="Resources\reminderbar.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
   <Import Project="..\packages\Fody.3.0.0\build\Fody.targets" Condition="Exists('..\packages\Fody.3.0.0\build\Fody.targets')" />
