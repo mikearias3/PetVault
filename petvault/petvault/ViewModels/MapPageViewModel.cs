@@ -44,10 +44,23 @@ namespace petvault.ViewModels
 
                 var pin = new Pin
                 {
-                    Type = PinType.Generic,
                     Position = new Position(pp.Latitude, pp.Longitude),
-                    Label = pet.Name
+                    Label = pet.Name + " está " + pp.Status
                 };
+
+                if (pp.Status == "Activo")
+                {
+                    pin.Type = PinType.SearchResult;
+                } 
+                else if (pp.Status == "Inactivo")
+                {
+                    pin.Type = PinType.SavedPin;
+                }
+                else
+                {
+                    pin.Type = PinType.Generic;
+                }
+
                 _petMap.Pins.Add(pin);
             }
 
@@ -57,15 +70,6 @@ namespace petvault.ViewModels
         async Task LoadMap(CustomMap _petMap)
         {
             await Task.Delay(TimeSpan.FromSeconds(5));
-            //var locator = CrossGeolocator.Current;
-            //var pos = await locator.GetPositionAsync(TimeSpan.FromSeconds(10));
-            //var userPos = new Position(pos.Latitude, pos.Longitude);
-            //var userPin = new Pin
-            //{
-            //    Type = PinType.SavedPin,
-            //    Position = userPos,
-            //    Label = "Estás aquí"
-            //};
 
             var petPos = new Position(pet.LastLatitude, pet.LastLongitude);
             _petMap.MoveToRegion(MapSpan.FromCenterAndRadius(petPos, Distance.FromMiles(0.1)));

@@ -1,23 +1,21 @@
-﻿<Properties StartupConfiguration="{4A94EE80-D796-4CA6-921C-88AD4FA955DE}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Droid/CustomMapRenderer.cs">
+﻿<Properties StartupConfiguration="{519660F6-E431-4E70-9620-C67788546C08}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Droid/Splash.cs">
     <Files>
       <File FileName="petvault/App.xaml.cs" Line="38" Column="6" />
-      <File FileName="petvault/Services/PetPositionsManager.cs" Line="25" Column="57" />
-      <File FileName="petvault/ViewModels/MapPageViewModel.cs" Line="56" Column="9" />
-      <File FileName="petvault/Views/MapPage.xaml" Line="31" Column="52" />
-      <File FileName="petvault/Views/MapPage.xaml.cs" Line="19" Column="10" />
-      <File FileName="petvault/Controls/CustomMap.cs" Line="5" Column="11" />
-      <File FileName="iOS/CustomMapRenderer.cs" Line="26" Column="1" />
-      <File FileName="petvault/ViewModels/BaseViewModel.cs" Line="1" Column="1" />
-      <File FileName="Droid/CustomMapRenderer.cs" Line="21" Column="1" />
+      <File FileName="Droid/Resources/drawable/splash_background.xml" Line="10" Column="12" />
+      <File FileName="Droid/Resources/values/styles.xml" Line="6" Column="73" />
+      <File FileName="Droid/MainActivity.cs" Line="16" Column="97" />
+      <File FileName="petvault/Views/Tabs/ReminderPage.xaml" Line="6" Column="56" />
+      <File FileName="petvault/Views/HomePage.xaml" Line="14" Column="1" />
+      <File FileName="Droid/Splash.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.petvault.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.5459A11C-59CE-4203-B20A-0EA8DC678746" automaticSigning="False" />
+  <MonoDevelop.Ide.ItemProperties.petvault.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.D4862424-6F64-40E0-B6CD-D3B7E494AA00" automaticSigning="False" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.petvault.Droid PreferredExecutionTarget="Android.Android_Accelerated_Nougat" />
+  <MonoDevelop.Ide.ItemProperties.petvault.Droid PreferredExecutionTarget="Android.d6aa891c" />
   <MultiItemStartupConfigurations />
 </Properties>
