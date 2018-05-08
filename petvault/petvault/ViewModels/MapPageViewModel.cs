@@ -40,31 +40,38 @@ namespace petvault.ViewModels
 
             foreach (var pp in petPositions)
             {
-                _petMap.RouteCoordinates.Add(new Position(pp.Latitude, pp.Longitude));
-
-                var pin = new Pin
+                if (pp.createdAt.Date == DateTime.Now.Date)
                 {
-                    Position = new Position(pp.Latitude, pp.Longitude),
-                    Label = pet.Name + " está " + pp.Status
-                };
-
-                if (pp.Status == "Activo")
-                {
-                    pin.Type = PinType.SearchResult;
-                } 
-                else if (pp.Status == "Inactivo")
-                {
-                    pin.Type = PinType.SavedPin;
-                }
-                else
-                {
-                    pin.Type = PinType.Generic;
-                }
-
-                _petMap.Pins.Add(pin);
+					_petMap.RouteCoordinates.Add(new Position(pp.Latitude, pp.Longitude));
+					
+					var pin = new Pin
+					{
+						Position = new Position(pp.Latitude, pp.Longitude),
+						Label = pet.Name + " está " + pp.Status
+					};
+					
+					if (pp.Status == "Activo")
+					{
+						pin.Type = PinType.SearchResult;
+					} 
+					else if (pp.Status == "Inactivo")
+					{
+						pin.Type = PinType.SavedPin;
+					}
+					else
+					{
+						pin.Type = PinType.Generic;
+					}
+					
+					_petMap.Pins.Add(pin);
+				}
+				
             }
 
-            _petMap.MoveToRegion(MapSpan.FromCenterAndRadius(_petMap.RouteCoordinates.Last(), Distance.FromMiles(1.0)));
+            if (_petMap.RouteCoordinates.Count > 0)
+            {
+				_petMap.MoveToRegion(MapSpan.FromCenterAndRadius(_petMap.RouteCoordinates.Last(), Distance.FromMiles(1.0)));
+            }
         }
 
         async Task LoadMap(CustomMap _petMap)

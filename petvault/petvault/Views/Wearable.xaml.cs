@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Threading.Tasks;
 using Microsoft.WindowsAzure.MobileServices;
 using petvault.Models;
+using petvault.Services;
 using Plugin.Geolocator;
 using Xamarin.Forms;
 
@@ -11,11 +12,14 @@ namespace petvault.Views
 {
     public partial class Wearable : ContentPage
     {
-        public static MobileServiceClient MobileService = new MobileServiceClient("https://petvault.azurewebsites.net");
+        AzureService azureService;
+        private static Random randStatus = new Random();
+        private static List<String> StatusTypes = new List<string>() { "Normal", "Activo", "Inactivo" };
 
         public Wearable()
         {
             InitializeComponent();
+            azureService = DependencyService.Get<AzureService>();
         }
 
         void OnGuardarButtonClicked(object sender, System.EventArgs e)
@@ -33,12 +37,21 @@ namespace petvault.Views
             Debug.WriteLine("Position Longitude: {0}", position.Longitude);
 
             PetPositions item = new PetPositions { 
-                //PetName = dummy.Text, 
+                PetID = "3129a8e2-28a0-4d0c-8e48-95e2737bc259",
+                Status = GetStatus(),
                 Latitude = position.Latitude, 
                 Longitude = position.Longitude
             };
-            await MobileService.GetTable<PetPositions>().InsertAsync(item);
+
+            await azureService.AddPetPosition(item);
+            await azureService.UpdatePet(item);
             result.Text = "Saved data.";
+        }
+
+        private string GetStatus()
+        {
+            int index = randStatus.Next(0, StatusTypes.Count);
+            return StatusTypes[index];
         }
     }
 }

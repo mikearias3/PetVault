@@ -19,6 +19,7 @@ namespace petvault
             InitializeComponent();
 
             NavigationService.NavigateAsync(new System.Uri("/NavigationPage/HomePage?selectedTab=ReminderPage", System.UriKind.Absolute));
+            //NavigationService.NavigateAsync(new System.Uri("/Wearable", System.UriKind.Absolute));
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)

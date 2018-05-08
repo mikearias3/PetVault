@@ -1,20 +1,22 @@
-﻿<Properties StartupConfiguration="{4A94EE80-D796-4CA6-921C-88AD4FA955DE}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="petvault/App.xaml.cs">
+﻿<Properties StartupConfiguration="{519660F6-E431-4E70-9620-C67788546C08}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="petvault/ViewModels/MapPageViewModel.cs">
     <Files>
-      <File FileName="petvault/App.xaml.cs" Line="25" Column="10" />
-      <File FileName="Droid/Resources/drawable/splash_background.xml" Line="10" Column="12" />
-      <File FileName="Droid/Resources/values/styles.xml" Line="18" Column="42" />
-      <File FileName="Droid/MainActivity.cs" Line="41" Column="6" />
-      <File FileName="petvault/Views/Tabs/ReminderPage.xaml" Line="35" Column="1" />
-      <File FileName="petvault/Views/HomePage.xaml" Line="14" Column="1" />
-      <File FileName="Droid/Splash.cs" Line="23" Column="12" />
-      <File FileName="petvault/Views/Tabs/PetPage.xaml" Line="37" Column="1" />
+      <File FileName="petvault/App.xaml.cs" Line="22" Column="101" />
+      <File FileName="petvault/Views/Wearable.xaml.cs" Line="35" Column="69" />
+      <File FileName="petvault/ViewModels/AddPetFormViewModel.cs" Line="20" Column="13" />
+      <File FileName="petvault/Services/AzureService.cs" Line="185" Column="1" />
+      <File FileName="petvault/Models/PetPositions.cs" Line="1" Column="1" />
+      <File FileName="petvault/ViewModels/MapPageViewModel.cs" Line="69" Column="12" />
+      <File FileName="petvault/Views/Wearable.xaml" Line="12" Column="1" />
+      <File FileName="petvault/ViewModels/PetPageViewModel.cs" Line="43" Column="17" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.petvault.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.80b8270bc4de18f93e4ad942275073aca700343f" automaticSigning="False" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
+  <MonoDevelop.Ide.ItemProperties.petvault.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.212F09D8-303E-4480-BD03-6675FBF38881" automaticSigning="False" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/mikearias/PetVault/petvault/petvault/ViewModels/MapPageViewModel.cs" relfile="petvault/ViewModels/MapPageViewModel.cs" line="43" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.petvault.Droid PreferredExecutionTarget="Android.d6aa891c" />

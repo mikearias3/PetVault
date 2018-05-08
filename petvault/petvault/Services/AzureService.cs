@@ -167,6 +167,38 @@ namespace petvault.Services
             return pet;
         }
 
+        public async Task<Pet> UpdatePet(PetPositions item)
+        {
+            await Initialize();
+
+            var pets = await GetPets();
+
+            foreach (var p in pets)
+            {
+                if (p.Id == item.PetID)
+                {
+                    p.LastLatitude = item.Latitude;
+                    p.LastLongitude = item.Longitude;
+					await petTable.UpdateAsync(p);               
+					
+                    await SyncPet();
+					return p;
+                }
+            }
+
+            return null;
+        }
+
+        public async Task<PetPositions> AddPetPosition(PetPositions pp)
+        {
+            await Initialize();
+
+            await petPositionsTable.InsertAsync(pp);
+
+            await SyncPetPositions();
+            return pp;
+        }
+
         public async Task<Reminder> AddReminder(Reminder reminder)
         {
             await Initialize();
