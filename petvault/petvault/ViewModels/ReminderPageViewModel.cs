@@ -16,6 +16,7 @@ namespace petvault.ViewModels
     public class ReminderPageViewModel : BaseViewModel
     {
         AzureService azureService;
+        public DelegateCommand<Reminder> OnOpenReminderCommand { get; set; }
         public DelegateCommand OnAddReminderCommand { get; set; }
         public DelegateCommand FillListCommand { get; set; }
 		INavigationService _navigationService;
@@ -29,8 +30,16 @@ namespace petvault.ViewModels
         {
             azureService = DependencyService.Get<AzureService>();
 			_navigationService = navigationService;
+            OnOpenReminderCommand = new DelegateCommand<Reminder>(async (param) => await OpenReminderDetail(param));
             OnAddReminderCommand = new DelegateCommand(async () => await OpenReminderForm());
             FillListCommand = new DelegateCommand(async () => await GetReminders());
+        }
+
+        async Task OpenReminderDetail(Reminder param)
+        {
+            var navParams = new NavigationParameters();
+            navParams.Add("reminder", param);
+            await _navigationService.NavigateAsync("ReminderDetailPage", navParams);
         }
 
         async Task OpenReminderForm()

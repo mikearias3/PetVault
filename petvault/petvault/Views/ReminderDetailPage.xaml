@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage Title="Recordatorio" 
+             xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="petvault.Views.ReminderDetailPage">
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+            <Label Text="Título:" 
+                   FontAttributes="Bold" />
+            <Entry x:Name="reminder" 
+                   Text="{Binding reminder.Title}" />
+            <Label Text="Mascota:" 
+                   FontAttributes="Bold" />
+            <Picker x:Name="petPicker" />
+            <Label Text="Tipo de Recordatorio:" 
+                   FontAttributes="Bold" />
+            <Picker x:Name="typePicker" />
+            <Label Text="Fecha:" 
+                   FontAttributes="Bold" />
+            <DatePicker x:Name="datePicker"
+                        Date="{Binding reminder.Date.Date}" />
+            <Label Text="Hora:" 
+                   FontAttributes="Bold" />
+            <TimePicker x:Name="timePicker"
+                        Time="{Binding reminder.Date.TimeOfDay}" />
+            <Label Text="Notas:" 
+                   FontAttributes="Bold" />
+            <Editor x:Name="notes" 
+                    Text="{Binding reminder.Notes}"
+                    HeightRequest="150"/>
+            <StackLayout Orientation="Horizontal" 
+                         Padding="10">
+                <Button Text="Borrar" 
+                        BackgroundColor="Maroon" 
+                        WidthRequest="120" 
+                        TextColor="White" 
+                        HorizontalOptions="CenterAndExpand"
+                        Command="{Binding OnDeleteReminderCommand}" />
+                <Button Text="Guardar" 
+                        BackgroundColor="#009688" 
+                        WidthRequest="120" 
+                        TextColor="White" 
+                        HorizontalOptions="CenterAndExpand"
+                        Command="{Binding OnUpdateReminderCommand}" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

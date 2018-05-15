@@ -1,24 +1,20 @@
-﻿<Properties StartupConfiguration="{519660F6-E431-4E70-9620-C67788546C08}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="petvault/ViewModels/MapPageViewModel.cs">
+﻿<Properties StartupConfiguration="{4A94EE80-D796-4CA6-921C-88AD4FA955DE}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="petvault/ViewModels/ReminderDetailPageViewModel.cs">
     <Files>
-      <File FileName="petvault/App.xaml.cs" Line="22" Column="101" />
-      <File FileName="petvault/Views/Wearable.xaml.cs" Line="35" Column="69" />
-      <File FileName="petvault/ViewModels/AddPetFormViewModel.cs" Line="20" Column="13" />
-      <File FileName="petvault/Services/AzureService.cs" Line="185" Column="1" />
-      <File FileName="petvault/Models/PetPositions.cs" Line="1" Column="1" />
-      <File FileName="petvault/ViewModels/MapPageViewModel.cs" Line="69" Column="12" />
-      <File FileName="petvault/Views/Wearable.xaml" Line="12" Column="1" />
-      <File FileName="petvault/ViewModels/PetPageViewModel.cs" Line="43" Column="17" />
+      <File FileName="petvault/App.xaml.cs" Line="35" Column="100" />
+      <File FileName="petvault/ViewModels/ReminderDetailPageViewModel.cs" Line="43" Column="30" />
+      <File FileName="petvault/Views/ReminderDetailPage.xaml" Line="21" Column="44" />
+      <File FileName="petvault/Views/PetDetailPage.xaml" Line="44" Column="1" />
+      <File FileName="petvault/Models/Reminder.cs" Line="11" Column="41" />
+      <File FileName="petvault/Views/Forms/AddReminderForm.xaml" Line="7" Column="9" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.petvault.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.212F09D8-303E-4480-BD03-6675FBF38881" automaticSigning="False" />
+  <MonoDevelop.Ide.ItemProperties.petvault.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.5459A11C-59CE-4203-B20A-0EA8DC678746" automaticSigning="False" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/mikearias/PetVault/petvault/petvault/ViewModels/MapPageViewModel.cs" relfile="petvault/ViewModels/MapPageViewModel.cs" line="43" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.petvault.Droid PreferredExecutionTarget="Android.d6aa891c" />
+  <MonoDevelop.Ide.ItemProperties.petvault.Droid PreferredExecutionTarget="Android.Android_Accelerated_Nougat" />
   <MultiItemStartupConfigurations />
 </Properties>

@@ -50,10 +50,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Tabs\HelpPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
     <EmbeddedResource Include="Views\Forms\AddPetForm.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
@@ -67,6 +63,10 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\MapPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ReminderDetailPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -101,10 +101,6 @@
     </Compile>
     <Compile Include="ViewModels\PetPageViewModel.cs" />
     <Compile Include="ViewModels\ReminderPageViewModel.cs" />
-    <Compile Include="Views\Tabs\HelpPage.xaml.cs">
-      <DependentUpon>HelpPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="ViewModels\HelpPageViewModel.cs" />
     <Compile Include="ViewModels\BaseViewModel.cs" />
     <Compile Include="Models\Pet.cs" />
     <Compile Include="Views\Forms\AddPetForm.xaml.cs">
@@ -126,6 +122,10 @@
     </Compile>
     <Compile Include="ViewModels\MapPageViewModel.cs" />
     <Compile Include="Controls\CustomMap.cs" />
+    <Compile Include="Views\ReminderDetailPage.xaml.cs">
+      <DependentUpon>ReminderDetailPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\ReminderDetailPageViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System.Net.Http.Extensions">

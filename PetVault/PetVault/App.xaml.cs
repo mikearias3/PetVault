@@ -29,10 +29,10 @@ namespace petvault
             containerRegistry.RegisterForNavigation<HomePage, HomePageViewModel>();
             containerRegistry.RegisterForNavigation<PetPage, PetPageViewModel>();
             containerRegistry.RegisterForNavigation<ReminderPage, ReminderPageViewModel>();
-            containerRegistry.RegisterForNavigation<HelpPage, HelpPageViewModel>();
             containerRegistry.RegisterForNavigation<AddPetForm, AddPetFormViewModel>();
             containerRegistry.RegisterForNavigation<AddReminderForm, AddReminderFormViewModel>();
             containerRegistry.RegisterForNavigation<PetDetailPage, PetDetailPageViewModel>();
+            containerRegistry.RegisterForNavigation<ReminderDetailPage, ReminderDetailPageViewModel>();
             containerRegistry.RegisterForNavigation<MapPage, MapPageViewModel>();
 			containerRegistry.RegisterInstance<IUserDialogs>(UserDialogs.Instance);
         }

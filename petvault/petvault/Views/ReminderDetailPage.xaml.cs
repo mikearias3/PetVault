@@ -3,11 +3,11 @@ using System.Collections.Generic;
 
 using Xamarin.Forms;
 
-namespace petvault.Views.Tabs
+namespace petvault.Views
 {
-    public partial class HelpPage : ContentPage
+    public partial class ReminderDetailPage : ContentPage
     {
-        public HelpPage()
+        public ReminderDetailPage()
         {
             InitializeComponent();
         }

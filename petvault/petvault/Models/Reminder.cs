@@ -8,5 +8,6 @@ namespace petvault.Models
         public DateTime Date { get; set; }
 		public string Pet { get; set; }
         public string Type { get; set; }
+        public string Notes { get; set; }
     }
 }

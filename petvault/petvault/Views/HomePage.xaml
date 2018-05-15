@@ -8,6 +8,5 @@
 	<TabbedPage.Children>
         <tabs:PetPage />
         <tabs:ReminderPage />
-        <tabs:HelpPage />
     </TabbedPage.Children>
 </TabbedPage>
