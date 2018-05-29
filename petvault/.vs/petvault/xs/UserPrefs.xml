@@ -1,12 +1,16 @@
-﻿<Properties StartupConfiguration="{4A94EE80-D796-4CA6-921C-88AD4FA955DE}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="petvault/ViewModels/ReminderDetailPageViewModel.cs">
+﻿<Properties StartupConfiguration="{519660F6-E431-4E70-9620-C67788546C08}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="petvault/Views/Tabs/ReminderPage.xaml.cs">
     <Files>
-      <File FileName="petvault/App.xaml.cs" Line="35" Column="100" />
-      <File FileName="petvault/ViewModels/ReminderDetailPageViewModel.cs" Line="43" Column="30" />
-      <File FileName="petvault/Views/ReminderDetailPage.xaml" Line="21" Column="44" />
-      <File FileName="petvault/Views/PetDetailPage.xaml" Line="44" Column="1" />
-      <File FileName="petvault/Models/Reminder.cs" Line="11" Column="41" />
-      <File FileName="petvault/Views/Forms/AddReminderForm.xaml" Line="7" Column="9" />
+      <File FileName="petvault/App.xaml.cs" Line="41" Column="1" />
+      <File FileName="petvault/ViewModels/AddReminderFormViewModel.cs" Line="71" Column="13" />
+      <File FileName="petvault/Views/Forms/AddReminderForm.xaml" Line="21" Column="56" />
+      <File FileName="petvault/Views/ReminderDetailPage.xaml" Line="18" Column="27" />
+      <File FileName="petvault/Views/Tabs/ReminderPage.xaml" Line="9" Column="74" />
+      <File FileName="petvault/ViewModels/ReminderPageViewModel.cs" Line="52" Column="63" />
+      <File FileName="petvault/Views/PetDetailPage.xaml" Line="42" Column="43" />
+      <File FileName="petvault/Services/AzureService.cs" Line="225" Column="13" />
+      <File FileName="petvault/ViewModels/ReminderDetailPageViewModel.cs" Line="33" Column="10" />
+      <File FileName="petvault/Views/Tabs/ReminderPage.xaml.cs" Line="15" Column="9" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.petvault.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.5459A11C-59CE-4203-B20A-0EA8DC678746" automaticSigning="False" />
@@ -15,6 +19,6 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.petvault.Droid PreferredExecutionTarget="Android.Android_Accelerated_Nougat" />
+  <MonoDevelop.Ide.ItemProperties.petvault.Droid PreferredExecutionTarget="Android.56140e4e" />
   <MultiItemStartupConfigurations />
 </Properties>

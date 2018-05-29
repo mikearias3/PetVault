@@ -209,6 +209,26 @@ namespace petvault.Services
             return reminder;
         }
 
+        public async Task<Reminder> DeleteReminder(Reminder reminder)
+        {
+            await Initialize();
+
+            await reminderTable.DeleteAsync(reminder);
+
+            await SyncReminder();
+            return reminder;
+        }
+
+        public async Task<Reminder> UpdateReminder(Reminder reminder)
+        {
+            await Initialize();
+
+            await reminderTable.UpdateAsync(reminder);
+
+            await SyncReminder();
+            return reminder;
+        }
+
 
 
 //        public async Task<bool> LoginAsync()

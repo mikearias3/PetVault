@@ -139,6 +139,6 @@
 /Users/mikearias/PetVault/petvault/petvault/obj/Debug/petvault.Views.Forms.AddReminderForm.xaml.g.cs
 /Users/mikearias/PetVault/petvault/petvault/obj/Debug/petvault.Views.PetDetailPage.xaml.g.cs
 /Users/mikearias/PetVault/petvault/petvault/obj/Debug/petvault.Views.MapPage.xaml.g.cs
+/Users/mikearias/PetVault/petvault/petvault/obj/Debug/petvault.Views.ReminderDetailPage.xaml.g.cs
 /Users/mikearias/PetVault/petvault/petvault/obj/Debug/petvault.dll
 /Users/mikearias/PetVault/petvault/petvault/obj/Debug/petvault.pdb
-/Users/mikearias/PetVault/petvault/petvault/obj/Debug/petvault.Views.ReminderDetailPage.xaml.g.cs

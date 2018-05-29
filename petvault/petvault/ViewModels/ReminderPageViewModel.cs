@@ -51,6 +51,8 @@ namespace petvault.ViewModels
         {
             var reminders = await azureService.GetReminders();
 
+            _Reminders.Clear();
+
             foreach (var reminder in reminders)
             {
                 if (_Reminders.Where(p => p.Id == reminder.Id).Count() == 0)

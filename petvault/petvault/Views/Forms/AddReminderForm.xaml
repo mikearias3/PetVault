@@ -11,10 +11,15 @@
                    Text="{Binding reminder.Title}" />
             <Label Text="Mascota:" 
                    FontAttributes="Bold" />
-            <Picker x:Name="petPicker" />
+            <Picker x:Name="petPicker"
+                    ItemsSource="{Binding Pets}"
+                    ItemDisplayBinding="{Binding Name}"
+                    SelectedItem="{Binding SelectedPet}"/>
             <Label Text="Tipo de Recordatorio:" 
                    FontAttributes="Bold" />
-            <Picker x:Name="typePicker" />
+            <Picker x:Name="typePicker"
+                    ItemsSource="{Binding ReminderTypes}"
+                    SelectedItem="{Binding SelectedType}"/>
             <Label Text="Fecha:" 
                    FontAttributes="Bold" />
             <DatePicker x:Name="datePicker"

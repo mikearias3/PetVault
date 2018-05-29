@@ -228,6 +228,10 @@
     <BundleResource Include="Resources\tracking.png" />
     <BundleResource Include="Resources\petbar.png" />
     <BundleResource Include="Resources\reminderbar.png" />
+    <BundleResource Include="Resources\Alimentacion.png" />
+    <BundleResource Include="Resources\Higiene.png" />
+    <BundleResource Include="Resources\Ocio.png" />
+    <BundleResource Include="Resources\Veterinario.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />

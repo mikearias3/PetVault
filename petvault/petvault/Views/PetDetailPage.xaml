@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage Title="{Binding pet.Name}"
+             xmlns:local="clr-namespace:petvault.Extensions;assembly=petvault"
              xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              x:Class="petvault.Views.PetDetailPage">
@@ -29,6 +30,31 @@
                 <Entry x:Name="petAge" 
                        Keyboard="Numeric"
                        Text="{Binding pet.Age}" />
+                <Label Text="Recordatorios pendientes:" 
+                       FontAttributes="Bold" />
+                <StackLayout Padding="20">
+                    <local:ExtendedListView x:Name="listView" 
+                                        ItemsSource="{Binding rm}" 
+                                        RowHeight="60" 
+                                        TappedCommand="{Binding OnOpenReminderCommand}"
+                                        SeparatorVisibility="None">
+                        <local:ExtendedListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <ViewCell.View>
+                                        <StackLayout Orientation="Horizontal" Spacing="5">
+                                            <Image Source="{Binding Type}" VerticalOptions="Center" />
+                                            <StackLayout Orientation="Vertical" VerticalOptions="Center">
+                                                <Label Text="{Binding Title}" />
+                                                <Label Text="{Binding Date}" />
+                                            </StackLayout>                
+                                        </StackLayout>
+                                    </ViewCell.View>
+                                </ViewCell>
+                            </DataTemplate>
+                        </local:ExtendedListView.ItemTemplate>
+                    </local:ExtendedListView>
+                </StackLayout>
                 <Button Text="Localizar Mascota"
                         BackgroundColor="Teal"
                         TextColor="White"
